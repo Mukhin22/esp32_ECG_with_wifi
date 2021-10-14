@@ -1,0 +1,44 @@
+menu "MedBracelet Configuration"
+
+    config AP_MODE_SSID
+        string "Name of device hotspot network"
+        default "med_bracelet"
+        help
+            SSID (network name) for device as hotspot.
+
+    config AP_MODE_PASS
+        string "Pass of device hotspot network"
+        default "med_brac_pass"
+        help
+            WiFi password (WPA or WPA2) for device as hotspot.
+
+    config STA_MODE_SSID
+        string "SSID of hotspot device will be connected to"
+        default "med_bracelet"
+        help
+            SSID (network name) of WIFI hotspot device will be connected to.
+
+    config STA_MODE_PASS
+        string "SSID of hotspot device will be connected to"
+        default "ilovealnicko1"
+        help
+            WiFi password (WPA or WPA2) of WIFI hotspot device will be connected to.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+
+    config SD_CARD_ADDED
+        bool "add sd card initialization"
+        default y
+
+    config USE_ECG
+        bool "Use ECG sensor in project"
+        default n
+
+    config GET_JSON_CFG
+        bool "get json file from test server"
+        default n
+endmenu
