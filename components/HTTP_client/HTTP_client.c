@@ -168,6 +168,7 @@ esp_err_t http_client(const char *url, json_cfg_data_t *wifi_cfg)
         ESP_LOGE(TAG, "NULL PTR FOUND");
         goto exit;
     }
+
     //Create Ring Buffer with no Split
     xRingbuffer = xRingbufferCreate(1024, RINGBUF_TYPE_NOSPLIT);
     if (PTR_IS_NULL(xRingbuffer)) {
@@ -175,10 +176,12 @@ esp_err_t http_client(const char *url, json_cfg_data_t *wifi_cfg)
         ESP_LOGE(TAG, "FAILED TO CREATE RINGBUF");
         goto exit;
     }
+
     esp_http_client_config_t config = {
         .url           = JSON_URL,
         .event_handler = _http_event_handler,
     };
+
     esp_http_client_handle_t client = esp_http_client_init(&config);
     if (PTR_IS_NULL(client)) {
         err = ESP_FAIL;
