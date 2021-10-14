@@ -1,7 +1,16 @@
-# MedBracelet project
-This readme file describes MedBracelet project firmware and gives the guides on how to use it.
+# ESP32 with wifi and ECG
+This readme file describes  project firmware and gives the guides on how to use it.
 #Build note
 Project created using make build system.
+
+# Description
+
+This project use the esp32 board to run the wifi as a station and as a hotspot, depeneds on how it was configurated at start. It looks for a connection, an if it was reached, it get's the configuration of the sensors from the JSON file via wifi. After the configuration is read - system initialize the MAX86150 ECG sensor to use it with required in JSON file parameters.
+
+Also the project has a console component to control each of the connected to the ESP32 board GPIO pins, it could be used 
+for pin testing and setting in time of the board hardware and software testing.
+
+
 
 # Tutorials
 1. Environment(ESP_IDF) Start: https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html#get-started-get-esp-idf
