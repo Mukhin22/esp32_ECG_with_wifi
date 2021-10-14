@@ -10,7 +10,17 @@ This project use the esp32 board to run the wifi as a station and as a hotspot, 
 Also the project has a console component to control each of the connected to the ESP32 board GPIO pins, it could be used 
 for pin testing and setting in time of the board hardware and software testing.
 
+# Componenets(modules) used
 
+1. Station configuration module
+2. AP configuration module
+3. AP_STA configuration module
+4. File utils (working with JSON)
+5. i2c module to work with MAX86150 ECG sensor
+6. HTTP client module sending HTTP requests to the server and working with JSONs.
+7. GPIO control module (also used with console)
+8. Console component (used for testing the GPIOs, could be upgraded to test each of the modules)
+9. MAX86150 driver adapted for esp-idf
 
 # Tutorials
 1. Environment(ESP_IDF) Start: https://dl.espressif.com/doc/esp-idf/latest/get-started/index.html#get-started-get-esp-idf
