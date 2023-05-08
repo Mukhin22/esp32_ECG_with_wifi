@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := med_bracelet
+PROJECT_NAME := med_device
 
 include $(IDF_PATH)/make/project.mk
 
