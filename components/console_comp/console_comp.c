@@ -21,7 +21,7 @@
 
 static const char *TAG = "console";
 
-#define PROMPT_STR   "Med_bracelet"
+#define PROMPT_STR   "med_dev"
 #define HISTORY_PATH MOUNT_POINT "/history.txt"
 
 /* Prompt to be printed before each line.
