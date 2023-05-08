@@ -1,4 +1,4 @@
-menu "MedBracelet Configuration"
+menu "Med Device Configuration"
 
     config AP_MODE_SSID
         string "Name of device hotspot network"
