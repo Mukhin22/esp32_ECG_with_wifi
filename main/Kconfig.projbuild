@@ -2,25 +2,25 @@ menu "MedBracelet Configuration"
 
     config AP_MODE_SSID
         string "Name of device hotspot network"
-        default "med_bracelet"
+        default "sopr_med_dev"
         help
             SSID (network name) for device as hotspot.
 
     config AP_MODE_PASS
         string "Pass of device hotspot network"
-        default "med_brac_pass"
+        default "sopr_med_dev_pass"
         help
             WiFi password (WPA or WPA2) for device as hotspot.
 
     config STA_MODE_SSID
         string "SSID of hotspot device will be connected to"
-        default "med_bracelet"
+        default "sopr_sta_ssid"
         help
             SSID (network name) of WIFI hotspot device will be connected to.
 
     config STA_MODE_PASS
         string "SSID of hotspot device will be connected to"
-        default "ilovealnicko1"
+        default "12341234"
         help
             WiFi password (WPA or WPA2) of WIFI hotspot device will be connected to.
 
