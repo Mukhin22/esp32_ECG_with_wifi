@@ -118,17 +118,17 @@ CONFIG_ESPTOOLPY_MONITOR_BAUD=2000000
 # end of Serial flasher config
 
 #
-# MedBracelet Configuration
+# Med Device Configuration
 #
-CONFIG_AP_MODE_SSID="med_bracelet"
-CONFIG_AP_MODE_PASS="med_brac_pass"
-CONFIG_STA_MODE_SSID="med_bracelet"
+CONFIG_AP_MODE_SSID="med_device"
+CONFIG_AP_MODE_PASS="med_device"
+CONFIG_STA_MODE_SSID="med_device"
 CONFIG_STA_MODE_PASS="ilovealnicko1"
 CONFIG_ESP_MAXIMUM_RETRY=5
 CONFIG_SD_CARD_ADDED=y
 # CONFIG_USE_ECG is not set
 # CONFIG_GET_JSON_CFG is not set
-# end of MedBracelet Configuration
+# end of med_device Configuration
 
 #
 # Partition Table
